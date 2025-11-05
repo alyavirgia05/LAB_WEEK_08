@@ -180,7 +180,7 @@ class NotificationService : Service() {
             val notificationManager = getSystemService(NOTIFICATION_SERVICE) as
                     NotificationManager
             //Count down from 10 to 0
-            for (i in 10 downTo 0) {
+            for (i in 5 downTo 0) {
                 Thread.sleep(1000L)
                 //Updates the notification content text
                 notificationBuilder.setContentText("$i seconds until last warning")
